@@ -13,11 +13,10 @@ const PokemonCard = () => {
     const pokemon = pokemonList[0];
     const imgHandler = (pokemon) => {
         if (typeof(pokemon.imgSrc) === "string") {
-            return <img src={pokemon.imgSrc}></img>
+            return <img src={pokemon.imgSrc} alt={pokemon.name}></img>;
         } else {
             return <p>???</p>;
         }
-
     }
     return (
         <figure>
